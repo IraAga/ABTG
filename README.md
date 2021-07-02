@@ -1,13 +1,10 @@
-# ABTG - Automated Bluetooth Traffic Generator
+## ABTG - Automated Bluetooth Traffic Generator
 
-os: Arch Linux
-required programs: tshark, xdotool, awk, ffmpeg
+    OS: Arch Linux
+    Dependencies: tshark, xdotool, awk, ffmpeg, skyperforlinux, discord, spotify, chromium, thunar
 
-		apps: skyperforlinux, discord, spotify, chromium, thunar
+### Description: 
 
-Description: 
-	- Given the 'app_name' we sample from 
-	- And 'duration' value representng the overall capture time
 
 	Opens the given app, which creates bluetooth traffic. The bluetooth 
 	device should be already connected with the host before this script
@@ -15,7 +12,16 @@ Description:
 	The generated traffic gets captured using tshark. The duration of the
 	capture is determined by the user of the script.
 
-(!) NOTE 
+### Usage:
+    bash reccap.sh <app_name> <duration>
+        $app_name = discord/skype/youtube/spotify/music 
+        $duration > 60
+    
+	Given the 'app_name' that use to generate some king of audio output 
+	And 'duration' value representng the overall length of the procedure
+
+###### (!) NOTE (!)
 IF you want to use this script you must first fix the coordinates that xdotool 
 uses on your specific system. The default values are used on a Lenovo L13 ThinkPad
 with 13.3 inch display, running Arch Linux.
+
