@@ -19,7 +19,7 @@
         $duration > 60
     
 Given the 'app_name' that use to generate some king of audio output 
-And 'duration' value representng the overall length of the procedure
+and 'duration' value representng the overall length of the procedure
 
 ###### (!) NOTE (!)
 IF you want to use this script you must first fix the coordinates that xdotool 
