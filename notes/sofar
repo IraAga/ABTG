@@ -1,0 +1,40 @@
+Script Features
+
+1) Checks if Bluetooth in ON
+2) Gets the BD_ADDR of paired address (the device we sample from)
+3) Keeps track of the device's we sampled from,
+		
+		keeps,
+						1. Device Name
+						2. Device BD_ADDR 
+
+		in 'device_log' file
+4) Creates a screen recording saved as an .mp4 file
+		keeping track of the actions that took place while capturing
+5)	Generates Traffic using a certain app for a specified period of time,
+		
+		available ways to generate audio traffic:
+
+										- Skype
+										- Discord
+										- Spotify
+										- Youtube (using a browser)
+										- Mp3 audio file (using a media player)
+																								
+6)  Captures the Bluetooth traffic for a period of time, which is a bit 
+    longer than the period of time that traffic is generated.
+7)  triples of .pcap & .mp4 & .log files are created after each execution of the
+		script, which are saved seperately for each device (a folder per device),
+		saved in a folder
+				
+		e.g. for device AM61 we have
+						 AM61/
+								|_skype_0/
+												|_skype_0.pcap
+												|_skype_0.mp4
+												|_skype_0.log
+								|_skype_1/
+								...
+		
+8) .log files keep a copy of journal's entries during the
+		execution of the reccap script 
